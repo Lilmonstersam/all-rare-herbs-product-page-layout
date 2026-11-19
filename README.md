@@ -31,6 +31,7 @@ The floating contact icon and reCAPTCHA badge lift above the bar while it is sho
 - Built from a saved copy of the live page. Product images load from the live site.
 - Analytics and ad tracking (GTM, GA4/Google Ads, Meta Pixel/CAPI, Mailchimp, reCAPTCHA) are **removed** so reviewing the mockup does not pollute the client's data.
 - `noindex` meta + `robots.txt` keep the copy out of search results.
+- Icon fonts the browser didn't save (Font Awesome 5.15.3, Elementor eicons 5.48/5.57, Slick) are vendored in `assets/fonts` and `assets/webfonts`.
 - The Add to Cart button submits to the live store, so a click adds the item to your real cart on allrareherbs.com.au.
 
 ## Deployment
@@ -40,6 +41,7 @@ Pushing to `main` deploys via GitHub Actions (`.github/workflows/deploy.yml`) to
 ```
 index.html      # the mockup
 assets/         # CSS, JS, fonts and images captured from the live page
+scripts/build.py  # rebuilds index.html + assets/ from a browser "Save page as" copy
 robots.txt      # disallow all
 .nojekyll       # serve files as-is
 ```
