@@ -13,7 +13,7 @@ TRACK_SRC = ('recaptcha__', 'gtm.js', 'fbevents.js', '9361d954', 'facebook-for-w
              'pixel-tracking', 'pixel-events', 'clientParamBuilder', 'gtag-events', 'api.js', 'index(2).js')
 TRACK_ID = ('wc-facebook-signals', 'mailchimp-woocommerce', 'wc-facebook-pixel', 'facebook-capi', 'google-recaptcha',
             'wpcf7-recaptcha', 'facebook-for-woocommerce-inline', 'gla-gtag-events')
-TRACK_BODY = ('googletagmanager.com', 'fbq(', "gtag('js'", 'gtag("event"', 'gtag("config"')
+TRACK_BODY = ('googletagmanager.com', 'connect.facebook.net', 'fbq(', "gtag('js'", 'gtag("event"', 'gtag("config"')
 removed = 0
 for m in reversed(scripts):
     attrs, body = m.group(1), m.group(2)
