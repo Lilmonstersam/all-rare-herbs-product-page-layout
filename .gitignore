@@ -1,0 +1,20 @@
+# OS / editor
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+*.swp
+
+# Local build output
+_site/
+node_modules/
+
+# Browser "Save page as" leftovers (use index.html + assets/ only)
+*_files/
+*.html.bak
+*.orig
+
+# Secrets
+.env
+.env.*
